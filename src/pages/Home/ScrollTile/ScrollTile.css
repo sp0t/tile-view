@@ -1,0 +1,40 @@
+.scroll-tile {
+  background: rgb(237,237,237);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  margin: 2px; /* General margin around each tile */
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Hide overflow content */
+  box-sizing: border-box; /* Include padding and border in width and height */
+  
+}
+
+
+.scroll-tile img, .scroll-tile div {
+  width: 100%;   /* Scale images to fit within the tile */
+  height: 100%; /* Scale images to fit within the tile */
+  object-fit: cover; 
+  display: block;
+}
+.scroll-tile:hover {
+  transform: scale(1.02);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+}
+
+.App {
+  /* display: grid; */
+  /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
+  gap: 20px; /* Fixed margin between tiles */
+  padding: 20px;
+}
+
+
+
